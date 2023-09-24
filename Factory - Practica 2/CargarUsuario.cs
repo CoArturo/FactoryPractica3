@@ -17,8 +17,5 @@ namespace Factory___Practica_2
             List<Registro>? usuarios = JsonConvert.DeserializeObject<List<Registro>>(json);
             return usuarios ?? new List<Registro>();
         }
-        
-        
-        
     }
 }

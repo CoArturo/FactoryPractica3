@@ -9,9 +9,12 @@ namespace Factory___Practica_2
 {
     class Programa
     {
+        private const string archivoUsuarios = "usuario.json";
+        public static List<Registro> usuario = new List<Registro>();
         static void Main(string[] args)
         {
             List<Registro> usuarios = CargarUsuario.CargarUsuarios();
+            RegistrarUsuario.Registrarse(usuarios);
             Iniciarsesion.IniciarSesion(usuarios);
             Console.Clear();
             string valor = Iniciarsesion.UsuarioActual.Rango.ToLower();

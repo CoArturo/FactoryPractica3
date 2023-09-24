@@ -18,6 +18,10 @@ namespace Factory___Practica_2
             {
                 return new Cliente();
             }
+            else if (tipos == "administrador")
+            {
+                return new Administrador();
+            }
             else if (tipos == "proveedor")
             {
                 return new Proveedor();
