@@ -23,7 +23,6 @@ namespace Factory___Practica_2
             rango.MenuRango();
             Console.ReadKey();
             Main(args);
-
         }
     }
 }
