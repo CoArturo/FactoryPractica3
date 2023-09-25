@@ -19,7 +19,6 @@ namespace Factory___Practica_2
             }
             
             Console.ReadLine();
-            Iniciarsesion.IniciarSesion(usuarios);
         }
     }
 }
