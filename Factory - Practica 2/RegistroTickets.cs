@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Factory___Practica_2
 {
-    class RegistroTickets
+    public class RegistroTickets
     {
         public static RegistroTickets? instance = null;
         public static readonly object lockObject = new object();

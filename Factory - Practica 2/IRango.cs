@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Factory___Practica_2
 {
-    interface IRango
+    public interface IRango
     {
         void MenuRango();
     }

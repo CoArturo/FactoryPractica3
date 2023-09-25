@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Factory___Practica_2
 {
-    class Registro
+    public class Registro
     {
         public string Nombre { get; set; }
         public string Contraseña { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Factory___Practica_2
 {
-    class Fabrica
+    public class Fabrica
     {
         public static IRango GetRango(string tipos)
         {

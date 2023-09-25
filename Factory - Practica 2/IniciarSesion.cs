@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace Factory___Practica_2
 {
 
-    class Iniciarsesion
+    public class Iniciarsesion
     {
         private const string archivoUsuarios = "usuario.json";
         public static List<Registro> usuario = new List<Registro>();

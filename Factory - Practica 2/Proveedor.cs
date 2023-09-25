@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Factory___Practica_2
 {
-    class Proveedor : IRango
+    public class Proveedor : IRango
     {
         public static RegistroTickets registro = RegistroTickets.Instance;
         List<Registro> usuarios = CargarUsuario.CargarUsuarios();

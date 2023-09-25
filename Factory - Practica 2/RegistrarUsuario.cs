@@ -7,11 +7,11 @@ using Newtonsoft.Json;
 
 namespace Factory___Practica_2
 {
-    class RegistrarUsuario
+    public class RegistrarUsuario
     {
         private const string archivoUsuarios = "usuario.json";
-        public static List<Registro> usuario = new List<Registro>();
-        List<Registro> usuarios = CargarUsuario.CargarUsuarios();
+        public static List<Registro> usuario;
+        List<Registro> usuarios;
         public static void Registrarse(List<Registro> usuarios)
         {
             if (usuarios.Any(u => u.Nombre != null))
@@ -23,10 +23,14 @@ namespace Factory___Practica_2
             }
             else
             {
+                usuarios = CargarUsuario.CargarUsuarios();
+                usuario = new List<Registro>();
                 usuarios.Add(new Registro("Waniel", "5656", "Empleado"));
                 usuarios.Add(new Registro("Abel", "1234", "Administrador"));
                 usuarios.Add(new Registro("Engel", "5678", "Proveedor"));
                 usuarios.Add(new Registro("Jose", "4321", "Cliente"));
+                usuarios.Add(new Registro("Juan Rosario", "4565", "Administrador"));
+
                 GuardarUsuario.GuardarUsuarios(usuarios);
             }
         }

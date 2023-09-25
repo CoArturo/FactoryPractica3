@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Factory___Practica_2
 {
-    class MenusRango
+    public class MenusRango
     {
         public void Hola()
         {
