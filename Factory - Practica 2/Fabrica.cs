@@ -10,25 +10,22 @@ namespace Factory___Practica_2
     {
         public static IRango GetRango(string tipos)
         {
-            if (tipos == "empleado")
+            switch (tipos)
             {
-                return new Empleado();
-            }
-            else if (tipos == "cliente")
-            {
-                return new Cliente();
-            }
-            else if (tipos == "administrador")
-            {
-                return new Administrador();
-            }
-            else if (tipos == "proveedor")
-            {
-                return new Proveedor();
-            }
-            else
-            {
-                throw new ArgumentException("Valor no válido para tipos");
+                case "empleado":
+                    return new Empleado();
+
+                case "cliente":
+                    return new Cliente();
+
+                case "administrador":
+                    return new Administrador();
+
+                case "proveedor":
+                    return new Proveedor();
+
+                default: return null;
+
             }
         }
     }
